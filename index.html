@@ -19,8 +19,8 @@
         }
     </style>
 </head>
-<body class="manrope max-w-[80%] mx-auto">
-    <header class="container mx-auto">
+<body class="manrope  ">
+    <header class="container mx-auto max-w-[80%]">
         <!-- navigation section  -->
         <nav class="navbar bg-base-100 my-12  flex justify-between items-center">
             <div>
@@ -40,10 +40,32 @@
             </div>
         </nav>
         <!-- banner section  -->
-       
-       
+        <section>
+          <div class="carousel w-full mb-12 lg:relative">
+            <div id="slide1" class="carousel-item relative w-full">
+              <img src="images/1.png" class="w-full" />
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide1" class="btn btn-circle">❮</a> 
+                <a href="#slide2" class="btn btn-circle">❯</a>
+              </div>
+            </div> 
+            <div id="slide2" class="carousel-item relative w-full">
+              <img src="images/12.webp" class="w-full" />
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide1" class="btn btn-circle">❮</a> 
+                <a href="#slide2" class="btn btn-circle">❯</a>
+              </div>
+            </div> 
+           </div>
+           <div class="bg-[#131318] p-8 rounded-md max-w-[500px] text-justify lg:absolute right-40  bottom-4">
+            <h3 class="card-title text-2xl text-[#FFF] font-bold">Meet all the heroes from the field</h3>
+            <p class="text-base font-medium text-[#ffffff] my-4">Dit amet consectetur. Condimentum dignissim adipiscing aliquam 
+              turpis placerat dolor. Purus urna in sit nullam proin. </p>
+           </div>
+        </section>
     </header>
-    <main>
+    <!-- main section start  -->
+    <main class="max-w-[80%] mx-auto">
         <!-- Professional Hockeys Club section  -->
         <section class="container mx-auto mb-16">
             <div class=" flex flex-col justify-center items-center border border-dashed p-12 border-neutral-300 border-l-0 border-r-0 ">
@@ -93,7 +115,7 @@
                 <p class="text-base font-medium text-[#424247] mt-5 mb-5 max-w-[607px] text-center">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
 
             </div>
-            <div class="grid  lg:grid-cols-2 grid-rows-2 gap-3 my-10">
+            <div class="grid grid-col-1 lg:grid-cols-2  gap-3 my-10">
                 <!-- 1st -->
                 <div class="card image-full ">
                     <figure><img src="images/2.png" alt="" /></figure>
@@ -365,11 +387,6 @@
             <!-- card-6 end -->
           </div>
         </section>
-        
-       
-        
-
-
         <!-- Clients Question section  -->
         <section class="container mx-auto">
             <div class=" flex flex-col justify-center items-center border border-dashed p-12 border-neutral-300 border-l-0 border-r-0 mb-12">
@@ -453,21 +470,53 @@
                 <h2 class="text-4xl font-extrabold text-[#131318] text-center">Get In Touch</h2>
                 <p class="text-base font-medium text-[#424247] mt-5 mb-5 max-w-[607px] text-center">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin.  </p>
             </div>
-            <div>
-                <div class="hero-content flex-col lg:flex-row">
-                       
+            <div class="my-24 flex flex-col lg:flex-row gap-8  ">
+              <div class="  grid gap-6 lg:grid-cols-1 max-w-[347px]">
+                <div class="bg-[#bced6d] h-50 p-10">
+                  <img src="images/Group 1171275317.png" alt="">
+                  <p class="text-[#424247] text-xs font-medium mt-4 mb-2">Phone Number : </p>
+                  <p class="text-[#131318] text-lg font-medium">(+62) 123-321-543</p>
                 </div>
-
-
+                <div class="h-50 bg-slate-300 p-10">
+                  <img src="images/Group 1171275318.png" alt="">
+                  <p class="text-[#424247] text-xs font-medium mt-4 mb-2">Phone Number : </p>
+                  <p class="text-[#131318] text-lg font-medium">(+62) 123-321-543</p>
+                </div>
+                <div class="bg-[#bced6d] h-50 p-10">
+                  <img src="images/Group 1171275321.png" alt="">
+                  <p class="text-[#424247] text-xs font-medium mt-4 mb-2">Phone Number : </p>
+                  <p class="text-[#131318] text-lg font-medium">(+62) 123-321-543</p>
+                </div>
+              </div>
+              <div class="space-y-2 max-w-[672]">
+                <div class="grid grid-col-1 lg:grid-cols-2  ">
+               <div class="">
+                    <p class="text-xl font-bold text-[#131318]">Your Name</p>
+                    <input class="max-w[324px] min-h[64px] pt-5 pb-4 pl-5 pr-21 bg-slate-300" type="text" placeholder="Enter Your full name">
+                   </div>
+                   <div>
+                    <p class="text-xl font-bold text-[#131318]">Your Email</p>
+                    <input class="max-w[324px] min-h[64px] pt-5 pb-4 pl-5 pr-21 bg-slate-300 " type="text" placeholder="Enter Your email">
+                   </div>
+                   <div>
+                    <p class=" text-xl font-bold text-[#131318]">Subject</p>
+                    <input class="max-w[324px] min-h[64px] pt-5 pb-4 pl-6 pr-20 bg-slate-300"type="text" placeholder="Enter your subject">
+                   </div>
+                    <div>
+                      <p class="text-xl font-bold text-[#131318]">Phone Number</p>
+                    <input class="max-w[324px] min-h[64px] pt-5 pb-4 pl-6 pr-20 bg-slate-300" type="text" placeholder="Enter your phone number">
+                    </div>
+                    <div>
+                      <p class="text-xl font-bold text-[#131318]">Message</p>
+                      <textarea class="bg-slate-400 p-4" name="" id="" cols="60" rows="16">Write your message</textarea>
+                      <button class="text-xl font-bold text-[#FFF] bg-[red]">send Message</button>
+                    </div>
+      
+                </div>
+            </div>
         </section>
-       
-     
-
-
-
     </main>
-    <footer>
-
+    <footer class="">
     </footer>
     
 </body>
