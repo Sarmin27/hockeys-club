@@ -23,45 +23,63 @@
     <header class="container mx-auto max-w-[80%]">
         <!-- navigation section  -->
         <nav class="navbar bg-base-100 my-12 flex justify-between items-center">
+          <div>
+            <div class=" block lg:hidden">
+              <div class="dropdown">
+                <div tabindex="0" role= "button " class="btn btn-ghost btn-circle">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" /></svg>
+                </div>
+                <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                  <li><a class="text-base  text-[#424247]" href="#"><span>Home</span></a></li>
+                  <li> <a class="text-base text-[#424247] " href="#">About</a></li>
+                  <li> <a class="text-base text-[#424247] " href="#">Pages</a></li>
+                  <li> <a class="text-base text-[#424247] " href="#">Blog</a></li>
+                  <li> <a class="text-base text-[#424247] " href="#">Contact</a></li>
+                </ul>
+              </div>
+            </div>
             <div>
-                <i class="fa-solid fa-bars :"></i>
-                <h2 class="text-4xl font-extrabold text-[#131318]  ">Hockey <span class="text-3xl font-extrabold text-[#FF4240]">’</span>s</h2>
+              <h2 class="max-w[160px] text-2xl lg:text-3xl font-extrabold text-[#131318] ">Hockey<span class=" text-2xl lg:text-3xl font-extrabold text-[#FF4240]">’</span>s</h2>
             </div>
-            <div class="hidden lg:flex space-x-6">
-                <a class="text-base font-bold text-[#FF4240]" href="#"><span>Home</span></a>
-                <a class="text-base text-[#424247] " href="#">About</a>
-                <a class="text-base text-[#424247] " href="#">Pages</a>
-                <a class="text-base text-[#424247] " href="#">Blog</a>
-                <a class="text-base text-[#424247] " href="#">Contact</a>
-            </div>
-            <div>
-                <i class="fa-solid fa-magnifying-glass lg:flex hidden lg: mr-6 text-[#89898B] "></i>
-                <button class="btn text-[#FFF] text-xl bg-[#FF4240] text-center py-2 px-6 ">Get Ticket</button>
-            </div>
+          </div>
+          <div class="hidden lg:flex space-x-6">
+              <a class="text-base font-bold text-[#FF4240]" href="#"><span>Home</span></a>
+              <a class="text-base text-[#424247] " href="#">About</a>
+              <a class="text-base text-[#424247] " href="#">Pages</a>
+              <a class="text-base text-[#424247] " href="#">Blog</a>
+              <a class="text-base text-[#424247] " href="#">Contact</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-magnifying-glass lg:flex hidden lg: mr-6 text-[#89898B] "></i>
+            <button class="btn text-[#FFF] text-xl bg-[#FF4240] text-center py-2 px-6 max-w-[148px] ">Get Ticket</button>
+          </div>
+            
         </nav>
         <!-- banner section  -->
-        <section  class="container mx-auto">
-          <div class="carousel w-full mb-12 lg:relative">
-            <div id="slide1" class="carousel-item relative w-full">
-              <img src="images/1.png" class="w-full object-fill" />
-              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                <a href="#slide1" class="btn btn-circle">❮</a> 
-                <a href="#slide2" class="btn btn-circle">❯</a>
-              </div>
-            </div> 
-            <div id="slide2" class="carousel-item relative w-full">
-              <img src="images/12.webp" class="w-full" />
-              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                <a href="#slide1" class="btn btn-circle">❮</a> 
-                <a href="#slide2" class="btn btn-circle">❯</a>
-              </div>
-            </div> 
-           </div>
-           <div class="bg-[#131318] p-8 rounded-md max-w-[500px] text-justify lg:absolute right-40  bottom-4">
-            <h3 class="card-title text-2xl text-[#FFF] font-bold">Meet all the heroes from the field</h3>
-            <p class="text-base font-medium text-[#ffffff] my-4">Dit amet consectetur. Condimentum dignissim adipiscing aliquam 
-              turpis placerat dolor. Purus urna in sit nullam proin. </p>
-           </div>
+        <section  class="container mx-auto ">
+          <div class="lg:relative">
+            <div class="carousel w-full h-full mb-12 ">
+              <div id="slide1" class="carousel-item relative w-full">
+                <img src="images/1.png" class="w-full object-fill" />
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                  <a href="#slide1" class="btn btn-circle">❮</a> 
+                  <a href="#slide2" class="btn btn-circle">❯</a>
+                </div>
+              </div> 
+              <div id="slide2" class="carousel-item relative w-full">
+                <img src="images/12.webp" class="w-full object-fill" />
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                  <a href="#slide1" class="btn btn-circle">❮</a> 
+                  <a href="#slide2" class="btn btn-circle">❯</a>
+                </div>
+              </div> 
+             </div>
+             <div class="bg-[#131318] p-8 rounded-md max-w-[500px] text-justify lg:absolute right-8 bottom-20">
+              <h3 class="card-title text-2xl text-[#FFF] font-bold">Meet all the heroes from the field</h3>
+              <p class="text-base font-medium text-[#ffffff] my-4">Dit amet consectetur. Condimentum dignissim adipiscing aliquam 
+                turpis placerat dolor. Purus urna in sit nullam proin. </p>
+             </div>
+          </div>
         </section>
     </header>
     <!-- main section start  -->
@@ -115,10 +133,10 @@
                 <p class="text-base font-medium text-[#424247] mt-5 mb-5 max-w-[607px] text-center">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
 
             </div>
-            <div class="grid lg:grid-cols-2 gap-3 my-10">
+            <div class="grid grid-col-1 lg:grid-cols-2 gap-3 my-10">
                 <!-- 1st -->
-                <div class="col-span-full lg: card image-full ">
-                    <figure><img class="opacity-100" src="images/2.png" alt="" /></figure>
+                <div class="card image-full col-span-2 lg:col-span-1">
+                    <figure><img class="opacity-100 w-full object-fill" src="images/2.png" alt="" /></figure>
                     <div class="card-body my-auto lg:mt-auto mb-0">
                       <h2 class="card-title text-2xl text-[#FFF] font-bold">Junior Program!</h2>
                       <p class="text-base font-medium text-[#FFF] mt-5 mb-5">Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit 
@@ -129,8 +147,8 @@
                     </div>
                   </div>
                   <!-- 2nd -->
-                  <div class="card image-full ">
-                    <figure><img class="opacity-100"  src="images/3.png" alt="" /></figure>
+                  <div class="card image-full col-span-2 lg:col-span-1">
+                    <figure><img class="opacity-100  w-full object-fill"  src="images/3.png" alt="" /></figure>
                     <div class="card-body my-auto lg:mt-auto mb-0">
                       <h2 class="card-title text-2xl text-[#FFF] font-bold">Teenager Program</h2>
                       <p class="text-base font-medium text-[#FFF] mt-5 mb-5">Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit 
@@ -141,7 +159,7 @@
                     </div>
                   </div>
                   <!-- 3rd  -->
-                  <div class="card image-full  col-span-2">
+                  <div class="card image-full  w-full object-fill col-span-2">
                     <figure><img class="opacity-100"  src="images/4.png" alt="" /></figure>
                     <div class="card-body my-auto lg:mt-auto mb-0">
                       <h2 class="card-title text-2xl text-[#FFF] font-bold">Professional Program</h2>
@@ -482,7 +500,7 @@
                     </div>
                 </div>
         </section> 
-        <!-- Get In Touch section  -->
+        <!-- Get In Touch section -->
         <section class="container mx-auto ">
             <div class=" flex flex-col justify-center items-center border border-dashed p-12 border-neutral-300 border-l-0 border-r-0 mb-12">
                 <h2 class="text-4xl font-extrabold text-[#131318] text-center">Get In Touch</h2>
@@ -526,7 +544,7 @@
                      </div>
                  </div>
                   <p class="text-xl font-bold text-[#131318]">Message</p>
-                  <textarea class= " bg-gray-50 p-4 rounded mb-6" name="" id="" cols="62" rows="10">Write your message</textarea>
+                  <textarea class= " bg-gray-50 p-4 rounded mb-6 w-full" name="" id="" cols="62" rows="10">Write your message</textarea>
                   <div class="w-100 bg-[#FF4240] flex justify-center">
                     <button class=" text-xl font-bold text-right text-[#FFF]  border-[#FF4240] rounded-md py-4 ">Send Message</button>
                   </div>
@@ -547,58 +565,60 @@
           </section>
      </main>
      <!-- footer section  -->
-    <footer class="w-full mt-12 bg-orange-300 ">
-      <div class="flex">
+    <footer class="w-full mt-12 bg-[#131318] ">
+      <div class="flex flex-col  justify-center lg:flex-row  lg:justify-between gap-24 lg:p-24">
         <!-- Get in touch  -->
-        <div class="">
-          <h2>Get In Touch</h2>
-          <p>Dit amet consectetur. Condimentum adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin.
-          </p>
+        <div class=" w-[100%] lg:w-[30%] flex flex-col items-center lg:items-start mt-6 lg:mt-0">
+           <div class="flex flex-col">
+            <h2 class="text-2xl font-extrabold text-center lg:text-left text-[#FFF]">Get In Touch</h2>
+            <p class="max-w-[346px] text-base text-center lg:text-left font-medium opacity-60 text-[#ffffff] pt-4 pb-6">Dit amet consectetur. Condimentum adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin.
+            </p>
+           </div>
           <div class="flex space-x-2 items-baseline">
-            <i class="fa-regular fa-envelope"></i>
-            <p>hockeys@support.com</p>
+            <i class="fa-regular fa-envelope text-[#FF4240]"></i>
+            <p class="opacity-60 text-base font-medium text-[#ffffff] pb-6">hockeys@support.com</p>
           </div>
           <div class="flex space-x-2 items-baseline">
-            <i class="fa-solid fa-phone"></i>
-            <p>(+62) 123-321-543</p>
+            <i class="fa-solid fa-phone  text-[#FF4240]"></i>
+            <p class="opacity-60 text-base font-medium text-[#ffffff]">(+62) 123-321-543</p>
           </div>
         </div>
-        <!-- company  -->
-       
-            <div class="">
-              <h4>Company</h4>
-              <ul>
-                <li> <a href="#">About us</a></li>
-                <li><a href="#">Leadership</a></li>
-                <li> <a href="#">Careers</a></li>
-                <li> <a href="#">News & Article</a></li>
-                <li> <a href="#">Legal Notice</a></li>
-              </ul>
-            </div>
-            <!-- support  -->
-            <div class="">
-              <h4>Support</h4>
-              <ul>
-                <li> <a href="#">Help Center</a></li>
-                <li><a href="#">FAQ</a></li>
-                <li> <a href="#">Ticket Support</a></li>
-                <li> <a href="#">Contact Us</a></li>
-              </ul>
-            </div>
-            <!-- services  -->
-          
-            <div class="">
-              <h4>Services</h4>
-              <ul>
-                <li> <a href="#">Academy</a></li>
-                <li><a href="#">Group Lesson</a></li>
-                <li> <a href="#">Private Lesson</a></li>
-                <li> <a href="#">Contact Us</a></li>
-                <li> <a href="#">Hockeys for kids</a></li>
-                <li> <a href="#">Hockeys for Adult</a></li>
-              </ul>
-            </div>
+        <div class="flex flex-wrap gap-12 justify-center w-full lg:w-[70%] lg:justify-between lg:gap-0">
+          <!-- company  -->
+          <div class="">
+            <h4 class="text-lg font-bold text-[#FFF] pb-6">Company</h4>
+            <ul class="">
+              <li class="pb-6"><a class="opacity-60 text-base font-medium text-[#ffffff]" href="#">About us</a></li>
+              <li class="pb-6"><a class="opacity-60 text-base font-medium text-[#ffffff] " href="#">Leadership</a></li>
+              <li class="pb-6"><a class="opacity-60 text-base font-medium text-[#ffffff]" href="#">Careers</a></li>
+              <li class="pb-6"><a class="opacity-60 text-base font-medium text-[#ffffff]" href="#">News & Article</a></li>
+              <li class="pb-6"><a class="opacity-60 text-base font-medium text-[#ffffff]" href="#">Legal Notice</a></li>
+            </ul>
+          </div>
+          <!-- support  -->
+          <div class="">
+            <h4 class="text-lg font-bold text-[#FFF] pb-6">Support</h4>
+            <ul>
+              <li class="pb-6"><a class="opacity-60 text-base font-medium text-[#ffffff]" href="#">Help Center</a></li>
+              <li class="pb-6"><a class="opacity-60 text-base font-medium text-[#ffffff]" href="#">FAQ</a></li>
+              <li class="pb-6"><a class="opacity-60 text-base font-medium text-[#ffffff]" href="#">Ticket Support</a></li>
+              <li class="pb-6"><a class="opacity-60 text-base font-medium text-[#ffffff]" href="#">Contact Us</a></li>
+            </ul>
+          </div>
+          <!-- services  -->
+          <div class="">
+            <h4 class="text-lg font-bold text-[#FFF] pb-6">Services</h4>
+            <ul>
+              <li class="pb-6"><a class="opacity-60 text-base font-medium text-[#ffffff]" href="#">Academy</a></li>
+              <li class="pb-6"><a class=" opacity-60 text-base font-medium text-[#ffffff]" href="#">Group Lesson</a></li>
+              <li class="pb-6"><a class="opacity-60 text-base font-medium text-[#ffffff]" href="#">Private Lesson</a></li>
+              <li class="pb-6"><a class=" opacity-60 text-base font-medium text-[#ffffff]" href="#">Contact Us</a></li>
+              <li class="pb-6"><a class=" opacity-60 text-base font-medium text-[#ffffff]" href="#">Hockeys for kids</a></li>
+              <li class="pb-6"><a class=" opacity-60 text-base font-medium text-[#ffffff]" href="#">Hockeys for Adult</a></li>
+            </ul>
+          </div>
         </div>
+      </div>
     </footer>
 </body>
 </html>
