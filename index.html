@@ -22,7 +22,7 @@
 <body class="manrope  ">
     <header class="container mx-auto max-w-[80%]">
         <!-- navigation section  -->
-        <nav class="navbar bg-base-100 my-12  flex justify-between items-center">
+        <nav class="navbar bg-base-100 my-12 flex justify-between items-center">
             <div>
                 <i class="fa-solid fa-bars :"></i>
                 <h2 class="text-4xl font-extrabold text-[#131318]  ">Hockey <span class="text-3xl font-extrabold text-[#FF4240]">’</span>s</h2>
@@ -40,10 +40,10 @@
             </div>
         </nav>
         <!-- banner section  -->
-        <section>
+        <section  class="container mx-auto">
           <div class="carousel w-full mb-12 lg:relative">
             <div id="slide1" class="carousel-item relative w-full">
-              <img src="images/1.png" class="w-full" />
+              <img src="images/1.png" class="w-full object-fill" />
               <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                 <a href="#slide1" class="btn btn-circle">❮</a> 
                 <a href="#slide2" class="btn btn-circle">❯</a>
@@ -72,9 +72,9 @@
                 <h2 class="text-4xl font-extrabold text-[#131318] text-center">Professional Hockeys Club</h2>
                 <p class="text-base font-medium text-[#424247] mt-5 mb-5 max-w-[607px] text-center">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin.  </p>
             </div>
-            <div class="grid grid-col-1 lg:grid-cols-4 mt-12">
+            <div class="grid grid-col-1 lg:grid-cols-4 mt-12 ">
               <!-- 87%  -->
-                <div>
+                <div class="flex flex-col justify-center items-center">
                   <div class="flex justify-center items-center mb-6"> 
                     <div class="radial-progress text-[#ef4444] font-extrabold text-xl text-center" style="--value:87;" role="progressbar"><span class="text-black">87%</span></div>
                   </div>
@@ -82,7 +82,7 @@
                     <p class="text-base font-normal text-[#424247] mt-5 mb-5 max-w-[250px] text-center">Amet consectetur. Condimentum dignissim adipiscing .</p>
                 </div>
                  <!-- 95% -->
-                <div>
+                <div class="flex flex-col justify-center items-center">
                   <div class="flex justify-center items-center mb-6"> 
                     <div class="radial-progress text-[#34d399] font-extrabold text-xl text-center" style="--value:95;" role="progressbar"><span class="text-black">95%</span></div>
                   </div>
@@ -90,7 +90,7 @@
                     <p class="text-base font-normal text-[#424247] mt-5 mb-5 max-w-[250px] text-center">Amet consectetur. Condimentum dignissim adipiscing .</p>
                 </div>
                 <!-- 90% -->
-                <div>
+                <div  class="flex flex-col justify-center items-center">
                   <div class="flex justify-center items-center mb-6"> 
                     <div class="radial-progress text-[#fbbf24] font-extrabold text-xl text-center" style="--value:90;" role="progressbar"><span class="text-black">90%</span></div>
                   </div>
@@ -98,7 +98,7 @@
                     <p class="text-base font-normal text-[#424247] mt-5 mb-5 max-w-[250px] text-center">Amet consectetur. Condimentum dignissim adipiscing .</p>
                 </div>
                 <!-- 80%  -->
-                <div>
+                <div  class="flex flex-col justify-center items-center" >
                   <div class="flex justify-center items-center mb-6"> 
                     <div class="radial-progress text-[#38bdf8] font-extrabold text-xl text-center" style="--value:80;" role="progressbar"><span class="text-black">80%</span></div>
                   </div>
@@ -118,7 +118,7 @@
             <div class="grid grid-col-1 lg:grid-cols-2  gap-3 my-10">
                 <!-- 1st -->
                 <div class="card image-full ">
-                    <figure><img src="images/2.png" alt="" /></figure>
+                    <figure><img class="opacity-0.5" src="images/2.png" alt="" /></figure>
                     <div class="card-body my-auto lg:mt-auto mb-0">
                       <h2 class="card-title text-2xl text-[#FFF] font-bold">Junior Program!</h2>
                       <p class="text-base font-medium text-[#FFF] mt-5 mb-5">Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit 
@@ -130,7 +130,7 @@
                   </div>
                   <!-- 2nd -->
                   <div class="card image-full ">
-                    <figure><img src="images/3.png" alt="" /></figure>
+                    <figure><img class="opacity-0.5"  src="images/3.png" alt="" /></figure>
                     <div class="card-body my-auto lg:mt-auto mb-0">
                       <h2 class="card-title text-2xl text-[#FFF] font-bold">Teenager Program</h2>
                       <p class="text-base font-medium text-[#FFF] mt-5 mb-5">Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit 
@@ -142,7 +142,7 @@
                   </div>
                   <!-- 3rd  -->
                   <div class="card image-full  col-span-2">
-                    <figure><img src="images/4.png" alt="" /></figure>
+                    <figure><img class="opacity-0.5"  src="images/4.png" alt="" /></figure>
                     <div class="card-body my-auto lg:mt-auto mb-0">
                       <h2 class="card-title text-2xl text-[#FFF] font-bold">Professional Program</h2>
                       <p class="text-base font-medium text-[#FFF] mt-5 mb-5 max-w-[520px]">Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit 
@@ -164,9 +164,12 @@
           <!-- card  -->
           <div class="grid grid-col-1 lg:grid-cols-2 gap-6">
             <!-- card-1 start -->
-            <div class="card card-side border p-4 border-neutral-300  ">
-              <figure><img src="images/5.png" alt="#"/></figure>
-              <div class="card-body">
+            <div class="card  border p-4 border-neutral-300 w-[100%] flex lg:flex-row items-center">
+              <div class=" w-[100%] lg:w-[40%]">
+                <figure><img class="image-full lg:" src="images/5.png" alt="#"/></figure>
+              </div>
+             
+              <div class="card-body w-[100%] lg:w-[60%]">
                 <div class="flex space-x-4">
                   <!-- icon-1  -->
                   <div class="flex space-x-1 justify-center items-baseline">
@@ -184,15 +187,15 @@
                     <h5 class="text-sm font-medium text-[#424247]">200</h5>
                   </div>
                 </div>
-                <div>
-                  <h3 class="card-title text-xl text-[#131318] text-center font-extrabold">World Cup Flags Football</h3>
-                <p class="text-[#424247] text-sm font-medium">Dolor sit amet consectetur. Ut urna diam quis sagittis</p>
+                <div class="">
+                  <h3 class="card-title text-xl lg:text-lg text-[#131318]  font-extrabold">World Cup Flags Football</h3>
+                <p class="text-[#424247] text-sm font-medium my-2">Dolor sit amet consectetur. Ut urna diam quis sagittis</p>
                 </div>
-                <div class="flex space-x-4">
+                <div class="lg:flex space-x-2 ">
                   <div>
-                    <p class="text-[#FF4240] text-sm font-extrabold">Price - $22.00</p>
+                    <p class="text-[#FF4240] text-sm font-extrabold ">Price-$22.00</p>
                   </div>
-                    <div class="flex space-x-1 justify-center items-baseline">
+                    <div class="flex  lg:space-x-2  items-baseline">
                       <i class="fa-solid fa-truck text-[#424247]"></i>
                       <p class="text-[#424247] text-sm font-medium">Delivery Fee:Free</p>
                     </div>
@@ -201,9 +204,12 @@
             </div>
             <!-- card-1 end -->
             <!-- card-2- start -->
-            <div class="card card-side border p-4 border-neutral-300  ">
-              <figure><img src="images/6.png" alt="#"/></figure>
-              <div class="card-body">
+            <div class="card  border p-4 border-neutral-300 w-[100%] flex lg:flex-row items-center">
+              <div class=" w-[100%] lg:w-[40%]">
+                <figure><img class="image-full lg:" src="images/6.png" alt="#"/></figure>
+              </div>
+             
+              <div class="card-body w-[100%] lg:w-[60%]">
                 <div class="flex space-x-4">
                   <!-- icon-1  -->
                   <div class="flex space-x-1 justify-center items-baseline">
@@ -221,15 +227,15 @@
                     <h5 class="text-sm font-medium text-[#424247]">200</h5>
                   </div>
                 </div>
-                <div>
-                  <h3 class="card-title text-xl text-[#131318] text-center font-extrabold">World Cup Flags Football</h3>
-                <p class="text-[#424247] text-sm font-medium">Dolor sit amet consectetur. Ut urna diam quis sagittis</p>
+                <div class="">
+                  <h3 class="card-title text-xl lg:text-lg text-[#131318]  font-extrabold">World Cup Flags Football</h3>
+                <p class="text-[#424247] text-sm font-medium my-2">Dolor sit amet consectetur. Ut urna diam quis sagittis</p>
                 </div>
-                <div class="flex space-x-4">
+                <div class="lg:flex space-x-2 ">
                   <div>
-                    <p class="text-[#FF4240] text-sm font-extrabold">Price - $22.00</p>
+                    <p class="text-[#FF4240] text-sm font-extrabold ">Price-$22.00</p>
                   </div>
-                    <div class="flex space-x-1 justify-center items-baseline">
+                    <div class="flex  lg:space-x-2  items-baseline">
                       <i class="fa-solid fa-truck text-[#424247]"></i>
                       <p class="text-[#424247] text-sm font-medium">Delivery Fee:Free</p>
                     </div>
@@ -238,9 +244,12 @@
             </div>
            <!-- card-2 end -->
             <!-- card-3- start -->
-            <div class="card card-side border p-4 border-neutral-300  ">
-              <figure><img src="images/7.png" alt="#"/></figure>
-              <div class="card-body">
+            <div class="card  border p-4 border-neutral-300 w-[100%] flex lg:flex-row items-center">
+              <div class=" w-[100%] lg:w-[40%]">
+                <figure><img class="image-full lg:" src="images/7.png" alt="#"/></figure>
+              </div>
+             
+              <div class="card-body w-[100%] lg:w-[60%]">
                 <div class="flex space-x-4">
                   <!-- icon-1  -->
                   <div class="flex space-x-1 justify-center items-baseline">
@@ -258,26 +267,29 @@
                     <h5 class="text-sm font-medium text-[#424247]">200</h5>
                   </div>
                 </div>
-                <div>
-                  <h3 class="card-title text-xl text-[#131318] text-center font-extrabold">World Cup Flags Football</h3>
-                <p class="text-[#424247] text-sm font-medium">Dolor sit amet consectetur. Ut urna diam quis sagittis</p>
+                <div class="">
+                  <h3 class="card-title text-xl lg:text-lg text-[#131318]  font-extrabold">World Cup Flags Football</h3>
+                <p class="text-[#424247] text-sm font-medium my-2">Dolor sit amet consectetur. Ut urna diam quis sagittis</p>
                 </div>
-                <div class="flex space-x-4">
+                <div class="lg:flex space-x-2 ">
                   <div>
-                    <p class="text-[#FF4240] text-sm font-extrabold">Price - $22.00</p>
+                    <p class="text-[#FF4240] text-sm font-extrabold ">Price-$22.00</p>
                   </div>
-                    <div class="flex space-x-1 justify-center items-baseline">
+                    <div class="flex  lg:space-x-2  items-baseline">
                       <i class="fa-solid fa-truck text-[#424247]"></i>
                       <p class="text-[#424247] text-sm font-medium">Delivery Fee:Free</p>
                     </div>
                   </div>
                 </div>
             </div>
-            <!-- card-3 end -->
-            <!-- card-4- start -->
-            <div class="card card-side border p-4 border-neutral-300  ">
-              <figure><img src="images/8.png" alt="#"/></figure>
-              <div class="card-body">
+            <!-- card-3-end  -->
+            <!-- card-4-start  -->
+            <div class="card  border p-4 border-neutral-300 w-[100%] flex lg:flex-row items-center">
+              <div class=" w-[100%] lg:w-[40%]">
+                <figure><img class="image-full lg:" src="images/8.png" alt="#"/></figure>
+              </div>
+             
+              <div class="card-body w-[100%] lg:w-[60%]">
                 <div class="flex space-x-4">
                   <!-- icon-1  -->
                   <div class="flex space-x-1 justify-center items-baseline">
@@ -295,15 +307,15 @@
                     <h5 class="text-sm font-medium text-[#424247]">200</h5>
                   </div>
                 </div>
-                <div>
-                  <h3 class="card-title text-xl text-[#131318] text-center font-extrabold">World Cup Flags Football</h3>
-                <p class="text-[#424247] text-sm font-medium">Dolor sit amet consectetur. Ut urna diam quis sagittis</p>
+                <div class="">
+                  <h3 class="card-title text-xl lg:text-lg text-[#131318]  font-extrabold">World Cup Flags Football</h3>
+                <p class="text-[#424247] text-sm font-medium my-2">Dolor sit amet consectetur. Ut urna diam quis sagittis</p>
                 </div>
-                <div class="flex space-x-4">
+                <div class="lg:flex space-x-2 ">
                   <div>
-                    <p class="text-[#FF4240] text-sm font-extrabold">Price - $22.00</p>
+                    <p class="text-[#FF4240] text-sm font-extrabold ">Price-$22.00</p>
                   </div>
-                    <div class="flex space-x-1 justify-center items-baseline">
+                    <div class="flex  lg:space-x-2  items-baseline">
                       <i class="fa-solid fa-truck text-[#424247]"></i>
                       <p class="text-[#424247] text-sm font-medium">Delivery Fee:Free</p>
                     </div>
@@ -312,9 +324,12 @@
             </div>
             <!-- card-4 end -->
             <!-- card-5- start -->
-            <div class="card card-side border p-4 border-neutral-300  ">
-              <figure><img src="images/9.png" alt="#"/></figure>
-              <div class="card-body">
+            <div class="card  border p-4 border-neutral-300 w-[100%] flex lg:flex-row items-center">
+              <div class=" w-[100%] lg:w-[40%]">
+                <figure><img class="image-full lg:" src="images/9.png" alt="#"/></figure>
+              </div>
+             
+              <div class="card-body w-[100%] lg:w-[60%]">
                 <div class="flex space-x-4">
                   <!-- icon-1  -->
                   <div class="flex space-x-1 justify-center items-baseline">
@@ -332,15 +347,15 @@
                     <h5 class="text-sm font-medium text-[#424247]">200</h5>
                   </div>
                 </div>
-                <div>
-                  <h3 class="card-title text-xl text-[#131318] text-center font-extrabold">World Cup Flags Football</h3>
-                <p class="text-[#424247] text-sm font-medium">Dolor sit amet consectetur. Ut urna diam quis sagittis</p>
+                <div class="">
+                  <h3 class="card-title text-xl lg:text-lg text-[#131318]  font-extrabold">World Cup Flags Football</h3>
+                <p class="text-[#424247] text-sm font-medium my-2">Dolor sit amet consectetur. Ut urna diam quis sagittis</p>
                 </div>
-                <div class="flex space-x-4">
+                <div class="lg:flex space-x-2 ">
                   <div>
-                    <p class="text-[#FF4240] text-sm font-extrabold">Price - $22.00</p>
+                    <p class="text-[#FF4240] text-sm font-extrabold ">Price-$22.00</p>
                   </div>
-                    <div class="flex space-x-1 justify-center items-baseline">
+                    <div class="flex  lg:space-x-2  items-baseline">
                       <i class="fa-solid fa-truck text-[#424247]"></i>
                       <p class="text-[#424247] text-sm font-medium">Delivery Fee:Free</p>
                     </div>
@@ -349,9 +364,12 @@
             </div>
             <!-- card-5 end -->
             <!-- card-6- start -->
-            <div class="card card-side border p-4 border-neutral-300  ">
-              <figure><img src="images/10.png" alt="#"/></figure>
-              <div class="card-body">
+            <div class="card  border p-4 border-neutral-300 w-[100%] flex lg:flex-row items-center">
+              <div class=" w-[100%] lg:w-[40%]">
+                <figure><img class="image-full lg:" src="images/10.png" alt="#"/></figure>
+              </div>
+             
+              <div class="card-body w-[100%] lg:w-[60%]">
                 <div class="flex space-x-4">
                   <!-- icon-1  -->
                   <div class="flex space-x-1 justify-center items-baseline">
@@ -369,15 +387,15 @@
                     <h5 class="text-sm font-medium text-[#424247]">200</h5>
                   </div>
                 </div>
-                <div>
-                  <h3 class="card-title text-xl text-[#131318] text-center font-extrabold">World Cup Flags Football</h3>
-                <p class="text-[#424247] text-sm font-medium">Dolor sit amet consectetur. Ut urna diam quis sagittis</p>
+                <div class="">
+                  <h3 class="card-title text-xl lg:text-lg text-[#131318]  font-extrabold">World Cup Flags Football</h3>
+                <p class="text-[#424247] text-sm font-medium my-2">Dolor sit amet consectetur. Ut urna diam quis sagittis</p>
                 </div>
-                <div class="flex space-x-4">
+                <div class="lg:flex space-x-2 ">
                   <div>
-                    <p class="text-[#FF4240] text-sm font-extrabold">Price - $22.00</p>
+                    <p class="text-[#FF4240] text-sm font-extrabold ">Price-$22.00</p>
                   </div>
-                    <div class="flex space-x-1 justify-center items-baseline">
+                    <div class="flex  lg:space-x-2  items-baseline">
                       <i class="fa-solid fa-truck text-[#424247]"></i>
                       <p class="text-[#424247] text-sm font-medium">Delivery Fee:Free</p>
                     </div>
@@ -470,53 +488,53 @@
                 <h2 class="text-4xl font-extrabold text-[#131318] text-center">Get In Touch</h2>
                 <p class="text-base font-medium text-[#424247] mt-5 mb-5 max-w-[607px] text-center">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin.  </p>
             </div>
-            <div class="my-24 flex flex-col lg:flex-row gap-8  ">
-              <div class="  grid gap-6 lg:grid-cols-1 max-w-[347px]">
-                <div class="bg-[#bced6d] h-50 p-10">
+            <div class="grid lg:grid-cols-2 gap-4">
+              <div class=" flex-1">
+                <div class="bg-lime-50 h-50 p-10 mb-3">
                   <img src="images/Group 1171275317.png" alt="">
                   <p class="text-[#424247] text-xs font-medium mt-4 mb-2">Phone Number : </p>
                   <p class="text-[#131318] text-lg font-medium">(+62) 123-321-543</p>
                 </div>
-                <div class="h-50 bg-slate-300 p-10">
+                <div class=" bg-yellow-50 h-50 p-10 mb-3 ">
                   <img src="images/Group 1171275318.png" alt="">
                   <p class="text-[#424247] text-xs font-medium mt-4 mb-2">Phone Number : </p>
                   <p class="text-[#131318] text-lg font-medium">(+62) 123-321-543</p>
                 </div>
-                <div class="bg-[#bced6d] h-50 p-10">
+                <div class="bg-indigo-100 h-50 p-10  ">
                   <img src="images/Group 1171275321.png" alt="">
                   <p class="text-[#424247] text-xs font-medium mt-4 mb-2">Phone Number : </p>
                   <p class="text-[#131318] text-lg font-medium">(+62) 123-321-543</p>
                 </div>
+  
               </div>
-              <div class="space-y-2 max-w-[672]">
-                <div class="grid grid-col-1 lg:grid-cols-2  ">
-               <div class="">
-                    <p class="text-xl font-bold text-[#131318]">Your Name</p>
-                    <input class="max-w[324px] min-h[64px] pt-5 pb-4 pl-5 pr-21 bg-slate-300" type="text" placeholder="Enter Your full name">
-                   </div>
-                   <div>
-                    <p class="text-xl font-bold text-[#131318]">Your Email</p>
-                    <input class="max-w[324px] min-h[64px] pt-5 pb-4 pl-5 pr-21 bg-slate-300 " type="text" placeholder="Enter Your email">
-                   </div>
-                   <div>
-                    <p class=" text-xl font-bold text-[#131318]">Subject</p>
-                    <input class="max-w[324px] min-h[64px] pt-5 pb-4 pl-6 pr-20 bg-slate-300"type="text" placeholder="Enter your subject">
-                   </div>
-                    <div>
+            
+                <form class="grid flex-1">
+                    
+                      <p class="text-xl font-bold text-[#131318]">Your Name</p>
+                      <input class="max-w[324px] min-h[64px] pt-5 pb-4 pl-5 pr-21 bg-gray-50 rounded" type="text" placeholder="Enter Your full name">
+                  
+                   
+                      <p class="text-xl font-bold text-[#131318]">Your Email</p>
+                      <input class="max-w[324px] min-h[64px] pt-5 pb-4 pl-5 pr-21 bg-gray-50 rounded" type="text" placeholder="Enter Your email">
+                 
+                
+                      <p class=" text-xl font-bold text-[#131318]">Subject</p>
+                      <input class="max-w[324px] min-h[64px] pt-5 pb-4 pl-6 pr-20 bg-gray-50 rounded "type="text" placeholder="Enter your subject">
+                     
+                  
                       <p class="text-xl font-bold text-[#131318]">Phone Number</p>
-                    <input class="max-w[324px] min-h[64px] pt-5 pb-4 pl-6 pr-20 bg-slate-300" type="text" placeholder="Enter your phone number">
-                    </div>
-                    <div>
+                      <input class="max-w[324px] min-h[64px] pt-5 pb-4 pl-6 pr-20 bg-gray-50" type="text" placeholder="Enter your phone number">
                       <p class="text-xl font-bold text-[#131318]">Message</p>
-                      <textarea class="bg-slate-400 p-4" name="" id="" cols="60" rows="16">Write your message</textarea>
-                      <button class="text-xl font-bold text-[#FFF] bg-[red]">send Message</button>
-                    </div>
-      
-                </div>
-            </div>
-        </section>
-    </main>
+                      <textarea class="bg-gray-50 p-4 rounded mb-6" name="" id="" cols="60" rows="12">Write your message</textarea>
+                      <button class="text-xl font-bold text-[#FFF] bg-[#FF4240] border-[#FF4240] rounded-md p-4">Send Message</button>
+                </form>
+              </div>
+          </section>
+     </main>
     <footer class="">
+      <div>
+
+      </div>
     </footer>
     
 </body>
